@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "76c8288e-7ed6-419f-9223-d0d5e0f680dc",
+		"name": "Trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24332500"
+	},
+	"item": [
+		{
+			"name": "Create a board on trello",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=aditya&key=2bc7ce11e0ef321a576bb48ec465c6a4&token=3c7f5b6fa9f64ea1fab3456ada00b419259f246af4760c79d2e726e91176fa42",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "aditya"
+						},
+						{
+							"key": "key",
+							"value": "2bc7ce11e0ef321a576bb48ec465c6a4"
+						},
+						{
+							"key": "token",
+							"value": "3c7f5b6fa9f64ea1fab3456ada00b419259f246af4760c79d2e726e91176fa42"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a board",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/636c990c425020011047ed10?key=2bc7ce11e0ef321a576bb48ec465c6a4&token=3c7f5b6fa9f64ea1fab3456ada00b419259f246af4760c79d2e726e91176fa42",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"636c990c425020011047ed10"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "2bc7ce11e0ef321a576bb48ec465c6a4"
+						},
+						{
+							"key": "token",
+							"value": "3c7f5b6fa9f64ea1fab3456ada00b419259f246af4760c79d2e726e91176fa42"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a board",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"636cbb9fa07bba033cab8491\",\r\n    \"name\": \"Aditya Vadlamani\",\r\n    \"desc\": \"Updated board\",\r\n    \"descData\": null,\r\n    \"closed\": false,\r\n    \"idOrganization\": \"636c841f5d83db0015133ca4\",\r\n    \"idEnterprise\": null,\r\n    \"pinned\": false,\r\n    \"url\": \"https://trello.com/b/Dw1Vi6v5/aditya\",\r\n    \"shortUrl\": \"https://trello.com/b/Dw1Vi6v5\",\r\n    \"prefs\": {\r\n        \"permissionLevel\": \"private\",\r\n        \"hideVotes\": false,\r\n        \"voting\": \"disabled\",\r\n        \"comments\": \"members\",\r\n        \"invitations\": \"members\",\r\n        \"selfJoin\": true,\r\n        \"cardCovers\": true,\r\n        \"isTemplate\": false,\r\n        \"cardAging\": \"regular\",\r\n        \"calendarFeedEnabled\": false,\r\n        \"hiddenPluginBoardButtons\": [],\r\n        \"switcherViews\": [\r\n            {\r\n                \"_id\": \"636cbb9fa07bba033cab8492\",\r\n                \"viewType\": \"Board\",\r\n                \"enabled\": true\r\n            },\r\n            {\r\n                \"_id\": \"636cbb9fa07bba033cab8493\",\r\n                \"viewType\": \"Table\",\r\n                \"enabled\": true\r\n            },\r\n            {\r\n                \"_id\": \"636cbb9fa07bba033cab8494\",\r\n                \"viewType\": \"Calendar\",\r\n                \"enabled\": false\r\n            },\r\n            {\r\n                \"_id\": \"636cbb9fa07bba033cab8495\",\r\n                \"viewType\": \"Dashboard\",\r\n                \"enabled\": false\r\n            },\r\n            {\r\n                \"_id\": \"636cbb9fa07bba033cab8496\",\r\n                \"viewType\": \"Timeline\",\r\n                \"enabled\": false\r\n            },\r\n            {\r\n                \"_id\": \"636cbb9fa07bba033cab8497\",\r\n                \"viewType\": \"Map\",\r\n                \"enabled\": false\r\n            }\r\n        ],\r\n        \"background\": \"purple\",\r\n        \"backgroundColor\": \"#0079BF\",\r\n        \"backgroundImage\": null,\r\n        \"backgroundImageScaled\": null,\r\n        \"backgroundTile\": false,\r\n        \"backgroundBrightness\": \"dark\",\r\n        \"backgroundBottomColor\": \"#0079BF\",\r\n        \"backgroundTopColor\": \"#0079BF\",\r\n        \"canBePublic\": true,\r\n        \"canBeEnterprise\": true,\r\n        \"canBeOrg\": true,\r\n        \"canBePrivate\": true,\r\n        \"canInvite\": true\r\n    },\r\n    \"labelNames\": {\r\n        \"green\": \"\",\r\n        \"yellow\": \"\",\r\n        \"orange\": \"\",\r\n        \"red\": \"\",\r\n        \"purple\": \"\",\r\n        \"blue\": \"\",\r\n        \"sky\": \"\",\r\n        \"lime\": \"\",\r\n        \"pink\": \"\",\r\n        \"black\": \"\",\r\n        \"green_dark\": \"\",\r\n        \"yellow_dark\": \"\",\r\n        \"orange_dark\": \"\",\r\n        \"red_dark\": \"\",\r\n        \"purple_dark\": \"\",\r\n        \"blue_dark\": \"\",\r\n        \"sky_dark\": \"\",\r\n        \"lime_dark\": \"\",\r\n        \"pink_dark\": \"\",\r\n        \"black_dark\": \"\",\r\n        \"green_light\": \"\",\r\n        \"yellow_light\": \"\",\r\n        \"orange_light\": \"\",\r\n        \"red_light\": \"\",\r\n        \"purple_light\": \"\",\r\n        \"blue_light\": \"\",\r\n        \"sky_light\": \"\",\r\n        \"lime_light\": \"\",\r\n        \"pink_light\": \"\",\r\n        \"black_light\": \"\"\r\n    },\r\n    \"limits\": {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.trello.com/1/boards/636cbb9fa07bba033cab8491?key=2bc7ce11e0ef321a576bb48ec465c6a4&token=3c7f5b6fa9f64ea1fab3456ada00b419259f246af4760c79d2e726e91176fa42",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"636cbb9fa07bba033cab8491"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "2bc7ce11e0ef321a576bb48ec465c6a4"
+						},
+						{
+							"key": "token",
+							"value": "3c7f5b6fa9f64ea1fab3456ada00b419259f246af4760c79d2e726e91176fa42"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/636cbb9fa07bba033cab8491/calendarKey/generate?key=2bc7ce11e0ef321a576bb48ec465c6a4&token=3c7f5b6fa9f64ea1fab3456ada00b419259f246af4760c79d2e726e91176fa42",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"636cbb9fa07bba033cab8491",
+						"calendarKey",
+						"generate"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "2bc7ce11e0ef321a576bb48ec465c6a4"
+						},
+						{
+							"key": "token",
+							"value": "3c7f5b6fa9f64ea1fab3456ada00b419259f246af4760c79d2e726e91176fa42"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
